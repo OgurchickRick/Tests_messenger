@@ -13,8 +13,9 @@ public class HomePage {
     public SelenideElement inputChatDescription = $x("//input[@name='description']");
     public SelenideElement inputFileLoad = $x("//input[@type='file']");
     public SelenideElement buttonCreateChat = $x("//button[text()='Создать']");
-    public SelenideElement firstChat = $x("//div[contains(@class, 'ChatList_container')]/div/div[1]");
+    public SelenideElement firstChat = $x("//div[contains(@class, 'ChatList_chats')][1]");
     public SelenideElement inputMessage = $x("//div[contains(@class, 'input')]//div[contains(@class, 'input')]");
     public SelenideElement inputSmile = $x("//div[contains(@class, 'input')]//div[contains(@class, 'input')]");
+    public SelenideElement lastMessage = $x("//section/div[contains(@class, 'ChatRoom')]//form[contains(@class, 'ChatRoom_form_')]/div/div[last()]");
 
 }

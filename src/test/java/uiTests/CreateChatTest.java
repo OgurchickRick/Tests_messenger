@@ -1,8 +1,10 @@
 package uiTests;
 
-import com.codeborne.selenide.Condition;
 import methods.Authorization;
+import methods.Chat;
 import org.testng.annotations.Test;
+
+import static com.codeborne.selenide.Condition.text;
 
 public class CreateChatTest extends BaseTest{
 
@@ -12,7 +14,7 @@ public class CreateChatTest extends BaseTest{
         homePage.buttonAddChat.click();
         homePage.inputChatName.setValue("Чат-просто чат");
         homePage.buttonCreateChat.click();
-        homePage.firstChat.shouldBe(Condition.text("Чат-просто чат"));
+        homePage.firstChat.shouldBe(text("Чат-просто чат"));
     }
 
 
